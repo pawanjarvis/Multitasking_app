@@ -3,24 +3,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#FFFFFF">
 
     <Button
         android:id="@+id/btn_new_window"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="नई विंडो खोलें" />
+        android:text="नई विंडो खोलें"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp" />
     
     <Button
         android:id="@+id/btn_show_all"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="सभी विंडो दिखाएं" />
+        android:text="सभी विंडो दिखाएं"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp" />
     
-    <RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/windows_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:visibility="gone" />
 
 </LinearLayout>
