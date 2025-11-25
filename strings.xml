@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">मल्टी-विंडो ऐप</string>
+    <string name="new_window">नई विंडो खोलें</string>
+    <string name="show_all_windows">सभी विंडो दिखाएं</string>
+    <string name="close">बंद करें</string>
+    <string name="minimize">छोटा करें</string>
+    <string name="maximize">बड़ा करें</string>
+    <string name="window_title">विंडो %d</string>
+    <string name="max_windows_reached">अधिकतम 10 विंडो खोल सकते हैं</string>
+    <string name="overlay_permission_required">फ्लोटिंग विंडो के लिए परमिशन आवश्यक है</string>
+    <string name="service_notification_title">मल्टी-विंडो ऐप</string>
+    <string name="service_notification_text">बैकग्राउंड में चल रहा है</string>
+</resources>
