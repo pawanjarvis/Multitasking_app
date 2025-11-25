@@ -13,5 +13,17 @@ public class PermissionManager {
                 Uri.parse("package:" + activity.getPackageName()));
             activity.startActivityForResult(intent, requestCode);
         }
-    }
+    }// permissionManager.java - Yeh add karo
+package com.example.multiwindowapp;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
+import android.provider.Settings;
+
+public class PermissionManager {
+    // ... existing code
+}
 }

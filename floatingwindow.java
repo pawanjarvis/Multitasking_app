@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import java.util.List;
 import java.util.UUID;
+import com.example.multiwindowapp.R;
 
 public class FloatingWindow {
     private Context context;

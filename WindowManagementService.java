@@ -1,10 +1,40 @@
+// WindowManagementService.java - Yeh puri file replace karo
+package com.example.multiwindowapp;
+
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.Service;
+import android.content.Intent;
+import android.os.Build;
+import android.os.IBinder;
+import androidx.core.app.NotificationCompat;
+
 public class WindowManagementService extends Service {
-    // ✅ Missing methods:
+    private static final String CHANNEL_ID = "multi_window_channel";
+    
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        createNotificationChannel();
+        startForeground(1, createNotification());
+    }
+    
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        return START_STICKY;
+    }
+    
+    @Override
+    public IBinder onBind(Intent intent) {
+        return null;
+    }
+    
     private void createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(
                 CHANNEL_ID,
-                "Multi Window Service",
+                "Multi Window Service", 
                 NotificationManager.IMPORTANCE_LOW
             );
             NotificationManager manager = getSystemService(NotificationManager.class);
